@@ -8,6 +8,7 @@ const VideoList = ({ videos, onVideoClick }) => {
 				if (video.id.videoId) {
 					return <VideoItem onVideoClick={onVideoClick} key={video.etag} video={video} />;
 				}
+				return null;
 			})}
 		</div>
 	);
